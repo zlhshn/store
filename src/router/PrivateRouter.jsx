@@ -11,7 +11,7 @@ const PrivateRouter = () => {
       <Navbar/> <Outlet />
     </>
   ) : (
-    <Navigate to="/login" />
+    <Navigate to="/" />
   );
 };
 
