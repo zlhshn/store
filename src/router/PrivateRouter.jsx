@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { LoginContext } from "../context/LoginProvider";
+import { Navigate, Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const PrivateRouter = () => {
-  return (
-    <div>PrivateRouter</div>
-  )
-}
+  const { user } = useContext(LoginContext);
 
-export default PrivateRouter
+  return user ? (
+    <>
+      <Navbar/> <Outlet />
+    </>
+  ) : (
+    <Navigate to="/login" />
+  );
+};
+
+export default PrivateRouter;
