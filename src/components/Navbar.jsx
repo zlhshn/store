@@ -1,4 +1,4 @@
-
+import logo from "../assets/trend.png"
 import { closeNavbar, openNavbar, logoutIcon } from "../helper/icons";
 import {NavLink} from "react-router-dom"
 import React, { useState } from "react";
@@ -26,7 +26,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-navbarColor md:text-sm  dark:text-gray-900">
+    <nav className="bg-pink-200 md:text-sm  dark:text-gray-900">
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
         <div className="flex items-center justify-between py-5 md:block">
           <a
@@ -35,9 +35,9 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex items-center"
           >
-            <img src="" width={50} height={50} alt="Clarusway" />
+            <img src="" width={50} height={50} alt="trend" />
             <span className="text-gray-700 hover:text-gray-900 font-medium">
-              Clarusway
+              TREND STORE
             </span>
           </a>
           {/**iconu md ekranlardan sonra gizlensin diyoruz */}
@@ -54,12 +54,12 @@ const Navbar = () => {
             <ul className="space-y-6 md:flex md:space-x-6 md:space-y-0">
                  {
                   titles.map((item)=><li key={item.title}
-                  className="text-gray-700 font-medium  flex justify-center"
+                  className="text-gray-700 font-medium  flex justify-center "
                 >
                   {/* state true olduğunda linkleri ortalamk için */}
                   <NavLink
                     to={item.path}
-                    className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white`}
+                    className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white hover:bg-pink-700 font-bold`}
                   >
                     {item.title}
                   </NavLink>
@@ -69,7 +69,7 @@ const Navbar = () => {
             <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
               <NavLink
                 to="/"
-                className="flex items-center justify-center gap-x-1 py-2 px-4 font-medium text-gray-700 hover:bg-main hover:text-white active:bg-gray-900 rounded-full md:inline-flex"
+                className="flex items-center justify-center gap-x-1 py-2 px-4 font-medium text-gray-700   md:inline-flex"
               >
                 Logout {logoutIcon}
               </NavLink>

@@ -20,4 +20,31 @@
 .login-btn{
     @apply bg-pink-700 w-[50%] h-[35px] m-auto text-white
 }
+.active{
+
+  background-color:rgb(191 18 93) ;
+  color: white;
+  font-weight: 400;
+
+}
+
+.about{
+ @apply  flex flex-col justify-center items-center m-[4rem] 
+
+}
+
+.aboutDiv{
+
+  border: 2px solid rgb(126, 118, 118);
+  box-shadow: 2px 10px 10px 3px rgba(131, 87, 141, 0.1); 
+  height: 40%;
+  width: 50%;
+  margin: 50px;
+  background: #abd7e9;
+  @apply flex flex-col  justify-center items-center p-3
+
+
+
+}
+
 }
