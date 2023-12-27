@@ -22,7 +22,7 @@ const Login = () => {
 
   return (
     <div className="backImage ">
-      <div className="bg-white p-6 rounded-2xl flex flex-col  justify-center  shadow-login w-[60%] max-w-[550px]">
+      <div className="bg-white p-6 rounded-2xl flex flex-col  justify-center  shadow-login w-[60%] max-w-[550px] form-container">
         <div className="flex flex-col items-center mb-5  gap-2">
           <h1 className="text-[30px] font-bold uppercase">Trend Store</h1>
           <span className="bg-pink-500 h-1.5 w-11 "></span>

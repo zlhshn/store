@@ -1,4 +1,4 @@
-import logo from "../assets/trend.png";
+
 import { closeNavbar, openNavbar, logoutIcon } from "../helper/icons";
 import { NavLink, useLocation } from "react-router-dom";
 import React, { useContext, useState } from "react";

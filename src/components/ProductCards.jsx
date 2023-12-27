@@ -6,16 +6,9 @@ const ProductCards = ({product}) => {
 
     const {title,category,thumbnail,price} = product
 
-  // const getDetailData = async () => {
-  //   const {data} = await axios(`https://dummyjson.com/products/${search.split("=")[1]}`)//!url den gelen search deki değerin tek olduğunu bildiğimiz için bu şekilde id bilgisini yakaladık.Eğer url de birden fazla parametre olursa o zaman ona göre bir ayıklama yapmamız lazım.
-  //   console.log(data)
-  // }
-  // useEffect(()=>{
-  //   getDetailData()
-  // },[])
 
   return (
-    <p  className="group relative block overflow-hidden">
+    <p  className="group relative block overflow-hidden ">
    
   
     <img
@@ -27,7 +20,7 @@ const ProductCards = ({product}) => {
     <div className="relative border border-gray-100 bg-white p-6">
       <span className="whitespace-nowrap bg-purple-50 px-3 py-1.5 text-xs font-semibold"> {category} </span>
   
-      <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
+      <h3 className="mt-4 text-lg font-medium text-gray-900 line-clamp-1">{title}</h3>
   
       <p className="mt-1.5 text-lg text-gray-700 ">{price} $</p>
   

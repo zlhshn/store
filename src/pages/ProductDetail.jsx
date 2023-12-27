@@ -1,23 +1,14 @@
-import axios from "axios";
-import React, { useEffect } from "react";
-import { useLocation, useParams,useNavigate } from "react-router-dom";
-// import ErrorPage from "../components/ErrorPage";
+
+import { useLocation,useNavigate } from "react-router-dom";
+
 
 const ProductDetail = () => {
-  const { title: params } = useParams(); //dinamik routelardaki değeri yakalar. route ayarlaması yaparken ne isim verdiysek useParams ile onu yakalarız.
-  const { state ,search } = useLocation();//!navigate ile taşına veriyi useLocation() hooku ile karşılyabiliyoruz. urlde yer alan parametreleri search ile yakalayabiliyoruz.
+  
+  const { state } = useLocation(); 
   const navigate = useNavigate();
 
 
-  // const getDetailData = async () => {
-  //   const {data} = await axios(`https://dummyjson.com/products/${search.split("=")[1]}`)//!url den gelen search deki değerin tek olduğunu bildiğimiz için bu şekilde id bilgisini yakaladık.Eğer url de birden fazla parametre olursa o zaman ona göre bir ayıklama yapmamız lazım.
-  //   console.log(data)
-  // }
-  // useEffect(()=>{
-  //   getDetailData()
-  // },[])
 
-  // if (!state) return <ErrorPage />;
 
   const { thumbnail, title, description, category, price, images } = state; 
   return (

@@ -6,22 +6,25 @@ import Products from "../pages/Products";
 import ProductDetail from "../pages/ProductDetail";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
+import Scroll from "../components/Scroll";
 
 const AppRouter = () => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Login />} />
+      <Scroll/>
+        <Routes>
+          <Route path="/" element={<Login />} />
 
-        <Route path="/dashboard" element={<PrivateRouter />}>
-          <Route path="" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="products" element={<Products />} />
-          <Route path="products/:title" element={<ProductDetail />} />
-        </Route>
+          <Route path="/dashboard" element={<PrivateRouter />}>
+            <Route path="" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="products" element={<Products />} />
+            <Route path="products/:title" element={<ProductDetail />} />
+          </Route>
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+     
     </>
   );
 };

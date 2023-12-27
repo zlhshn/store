@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import { stats } from "../helper/data";
 import { testimonials } from "../helper/data";
 
 const Home = () => {
-  const [count, setCount] = useState(0);
 
   return (
     <div>
