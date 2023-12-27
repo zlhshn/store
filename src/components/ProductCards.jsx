@@ -15,23 +15,32 @@ const ProductCards = ({product}) => {
   // },[])
 
   return (
-    <div className="cursor-pointer" onClick={()=>navigate(`/dashboard/products/${title}?detail=${product.id}`,{state:product}) }>
-    <div className="w-full rounded-md bg-gray-200 hover:opacity-75 lg:h-80">
-      <img
-        src={thumbnail}
-        alt={title}
-        title={title}
-        className="h-[200px] w-full object-fit lg:h-full lg:w-full"
-      />
+    <p  className="group relative block overflow-hidden">
+   
+  
+    <img
+      src={thumbnail}
+      alt=""
+      className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+    />
+  
+    <div className="relative border border-gray-100 bg-white p-6">
+      <span className="whitespace-nowrap bg-purple-50 px-3 py-1.5 text-xs font-semibold"> {category} </span>
+  
+      <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
+  
+      <p className="mt-1.5 text-lg text-gray-700 ">{price} $</p>
+  
+      <form className="mt-4">
+        <button
+          className="block w-full rounded bg-[#c45a7d] p-4 text-sm font-medium  text-white transition hover:scale-105"
+          onClick={()=>navigate(`/dashboard/products/${title}?detail=${product.id}`,{state:product}) }
+        >
+          DETAİLS
+        </button>
+      </form>
     </div>
-    <div className="mt-4 flex justify-between">
-      <div className="flex-1">
-        <h3 className="text-sm text-gray-700 line-clamp-1">{title}</h3>
-        <p className="mt-1 text-sm text-gray-500 line-clamp-1">{category}</p>
-      </div>
-      <p className="text-sm font-medium text-gray-900">{price} $</p>
-    </div>
-  </div>
+  </p>
   )
 }
 

@@ -27,7 +27,7 @@ const Navbar = () => {
   const location = useLocation()
 
   return (
-    <nav className="bg-[#be5f7f] md:text-sm  dark:text-gray-900">
+    <nav className="bg-[#af4d6e] md:text-sm  dark:text-gray-900">
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
         <div className="flex items-center justify-between py-5 md:block">
           <NavLink
@@ -42,7 +42,7 @@ const Navbar = () => {
           {/**iconu md ekranlardan sonra gizlensin diyoruz */}
           <div className="md:hidden">
             <button
-              className="menu-btn text-black hover:text-gray-800"
+              className="menu-btn text-black hover:text-gray-500"
               onClick={() => setShow(!show)}
             >
               {show ? closeNavbar : openNavbar}
@@ -63,7 +63,7 @@ const Navbar = () => {
                 {/* state true olduğunda linkleri ortalamk için */}
                 <NavLink
                   to={item.path}
-                  className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white hover:bg-gray-500 font-bold  ${location.pathname=== item.path ? "scale-[1.3] bg-gray-500 text-white" : ""}`}
+                  className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white hover:bg-gray-500 font-bold  ${location.pathname=== item.path ? "scale-[1.3] bg-gray-400 text-white" : ""}`}
                 >
                   {item.title}
                 </NavLink>

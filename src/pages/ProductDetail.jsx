@@ -21,9 +21,9 @@ const ProductDetail = () => {
 
   const { thumbnail, title, description, category, price, images } = state; 
   return (
-    <div className="container">
-      <div className="mt-6 w-full ">
-        <article className="mx-auto w-full block lg:flex mt-4 h-full 2xl:h-[70vh]  shadow-lg border rounded-md duration-300 hover:shadow-sm">
+    <div className="container ">
+      <div className="mt-6 w-full bg-slate-200">
+        <article className="mx-auto  w-full block lg:flex mt-4 h-full 2xl:h-[70vh]  shadow-sm  shadow-gray-900 border rounded-md duration-300 hover:shadow-sm">
           <div class="grid grid-rows-4 gap-2 h-full w-full lg:w-7/12 p-4">
             <div className="w-full row-span-3">
               <img
@@ -61,13 +61,13 @@ const ProductDetail = () => {
             <div className="flex justify-end gap-3 mt-4">
               <button
                 onClick={() => navigate(-1)}
-                className="border rounded-lg bg-labelColor text-white p-2"
+                className="border rounded-lg bg-gray-600 text-white p-2"
               >
                 Geri
               </button>
               <button
                 onClick={() => navigate("/dashboard")}
-                className="border rounded-lg bg-main text-white p-2"
+                className="border rounded-lg bg-main bg-pink-600 text-white p-2"
               >
                 Ana Sayfaya Dön
               </button>
