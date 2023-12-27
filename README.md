@@ -5,7 +5,8 @@
 * In this project, I first aimed to create a simulation of the login process with the context API component.
 * The user cannot access other pages without logging in.
 * I performed this process using the react -router-dom library.
-* I also used tailwind framework for styling
+* I also used tailwind framework for styling.
+* After the user searches, the search results do not disappear when they navigate to another page. The information is stored in session storage.
 
 ## Live Link
 [store_App](https://store-app-zlh.vercel.app/)
@@ -22,7 +23,8 @@
 🚀 Context -Api <br>
 🚀 Axios <br>
 🚀 TailWind CSS <br>
-🚀 Mock API
+🚀 Mock API <br>
+🚀 Session Storage
 
 
 ## USAGE..
