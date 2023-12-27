@@ -20,31 +20,37 @@
 .login-btn{
     @apply bg-pink-700 w-[50%] h-[35px] m-auto text-white
 }
-.active{
 
-  background-color:rgb(191 18 93) ;
-  color: white;
-  font-weight: 400;
-
-}
 
 .about{
- @apply  flex flex-col justify-center items-center m-[4rem] 
+ @apply  flex  justify-center items-center m-[4rem] 
 
 }
 
 .aboutDiv{
 
-  border: 2px solid rgb(126, 118, 118);
+  border: 2px solid rgb(209, 205, 205);
   box-shadow: 2px 10px 10px 3px rgba(131, 87, 141, 0.1); 
-  height: 40%;
+  height: 230px;
   width: 50%;
-  margin: 50px;
-  background: #abd7e9;
-  @apply flex flex-col  justify-center items-center p-3
+  margin: 20px;
+  background: #bdc7caad;
+  @apply flex flex-col  justify-center items-center p-3 rounded-[40px] line-clamp-4
 
+}
 
+.card-div{
+  @apply mt-6 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 xl:gap-x-8;
+}
+.container {
+ @apply mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8;
+}
 
+}
+
+@layer base{
+body{
+  @apply bg-gray-200
 }
 
 }
