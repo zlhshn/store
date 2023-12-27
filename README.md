@@ -14,7 +14,7 @@
 
 ## Screenshots
 
-![store]()
+![store](store.gif)
 
 
 ## Tech/framework used
@@ -24,13 +24,14 @@
 🚀 Axios <br>
 🚀 TailWind CSS <br>
 🚀 Mock API <br>
-🚀 Session Storage
+🚀 Session Storage <br>
+🚀 Custom Hook
 
 
 ## USAGE..
 
-🎀 When you hover over the email and password labels on the login form, the password assigned for login is displayed.
-🎀 Access to the pages is activated after the login process.
-🎀 You can search for products in the input section of the products page.
-🎀 Product information and extra pictures can be viewed by clicking on the detail button.
-🎀 You can exit the page by pressing the logout button.
+🎀 When you hover over the email and password labels on the login form, the password assigned for login is displayed.<br>
+🎀 Access to the pages is activated after the login process.<br>
+🎀 You can search for products in the input section of the products page.<br>
+🎀 Product information and extra pictures can be viewed by clicking on the detail button.<br>
+🎀 You can exit the page by pressing the logout button.<br>
