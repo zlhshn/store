@@ -28,7 +28,7 @@
 🚀 Custom Hook
 
 
-## USAGE..
+## Usage..
 
 🎀 When you hover over the email and password labels on the login form, the password assigned for login is displayed.<br>
 🎀 Access to the pages is activated after the login process.<br>
